@@ -49,7 +49,7 @@ const App = () => {
         grade: grade.toUpperCase(),
       }));
 
-      const response = await axios.post('http://localhost:5000/calculate_gpa', {
+      const response = await axios.post('https://gradepro.onrender.com/api/', {
         subjects: payloadSubjects,
       });
 
