@@ -1,0 +1,87 @@
+/* GradeCalculator.css */
+
+.grade-calculator-container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #121212;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.grade-calculator-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.grade-calculator-container label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.grade-calculator-container input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1.5px solid #333;
+  background: #1f1f1f;
+  color: #f0f0f0;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.grade-calculator-container input[type="number"]:focus {
+  outline: none;
+  border-color: #00bcd4;
+}
+
+.grade-calculator-container button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.grade-calculator-container button:hover {
+  background-color: #0097a7;
+}
+
+.grade-calculator-container p {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.grade-calculator-container ul {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.grade-calculator-container ul li {
+  background: #222;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  gap: 8px;
+}
+
+.grade-calculator-container ul li strong {
+  color: #00bcd4;
+  min-width: 30px;
+  display: inline-block;
+}
