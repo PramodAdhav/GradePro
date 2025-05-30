@@ -62,7 +62,7 @@ const App = () => {
   };
 
   const getGpaMessage = (gpa) => {
-    if (gpa === 10) return "🔥 You didn’t just pass, you've set the standard!";
+    if (gpa === 10) return "🔥 You didn’t just ace, you've set the standard!";
     if (gpa >= 9.5) return "💪 Nearly flawless — your brain’s doing push-ups, and it’s working!";
     if (gpa >= 9.0) return "😎 You’re rocking it! Solid work, keep riding that wave.";
     if (gpa >= 8.5) return "🎉 You're doing well—keep grinding, success loves consistency.";
