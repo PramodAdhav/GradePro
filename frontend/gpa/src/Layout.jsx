@@ -17,7 +17,7 @@ const Layout = () => {
   return (
     <div className="layout-container">
       <nav className="navbar">
-        <div className="navbar-title">PassPlease</div>
+        <div className="navbar-title">GradePro</div>
         <div className="nav-options">
           <button
             className={`nav-button ${selected === 'sgpa' ? 'active' : ''}`}
