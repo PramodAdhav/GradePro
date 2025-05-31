@@ -2,9 +2,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Enables communication with frontend (like React)
+CORS(app)  
 
-# Grade to grade-point mapping
 GRADE_POINTS = {
     "O": 10,
     "A+": 9,
@@ -32,7 +31,7 @@ def calculate_gpa():
 
     for subject in subjects:
         try:
-            credits = float(subject.get('credits', 0))  # <- corrected from 'credit' to 'credits'
+            credits = float(subject.get('credits', 0))  
             grade = subject.get('grade', '').strip().upper()
 
             if grade not in GRADE_POINTS:
