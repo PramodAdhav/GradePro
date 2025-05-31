@@ -102,7 +102,7 @@ canvas {
 
 /* Card container for the input table */
 .card {
-  background: #fefefe;
+  background: #121212 ;
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
   padding: 24px 30px;
   border-radius: 8px;
@@ -135,14 +135,14 @@ canvas {
   text-align: center;
   border-bottom: 1px solid #ddd;
   font-size: 1rem;
-  color: #34495e;
+  color: white;
 }
 
 .subject-table thead th {
-  background-color: #d3e0ea;
+  background-color: #121212;
   font-weight: 700;
-  color: #2c3e50;
-  border-bottom: 2px solid #aaccee;
+  color: white;
+  border-bottom: 2px solid white;
 }
 
 /* Input fields styling */
@@ -219,7 +219,7 @@ canvas {
 .gpa-display {
   font-size: 3.2rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: white;
   text-align: center;
   margin-top: 30px;
 }
@@ -232,7 +232,7 @@ canvas {
 .gpa-message {
   margin-top: 15px;
   font-size: 1.2rem;
-  color: #34495e;
+  color: white;
   text-align: center;
 }
 
