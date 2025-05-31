@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import axios from 'axios';
-import Confetti from './Confetti'; // Import confetti
+import Confetti from './Confetti';
 
 import perfect10Img from './assets/perfect10.jpg';
 import outstandingImg from './assets/outstanding.jpg';
