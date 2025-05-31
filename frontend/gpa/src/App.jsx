@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import axios from 'axios';
+import Confetti from './Confetti'; // Import confetti
 
 import perfect10Img from './assets/perfect10.jpg';
 import outstandingImg from './assets/outstanding.jpg';
@@ -23,6 +24,7 @@ const App = () => {
   );
   const [sgpa, setSgpa] = useState(null);
   const [error, setError] = useState('');
+  const [showConfetti, setShowConfetti] = useState(false); // New state for confetti
 
   const handleInputChange = (index, field, value) => {
     const updatedSubjects = [...subjects];
@@ -54,9 +56,11 @@ const App = () => {
       });
 
       setSgpa(response.data.sgpa);
+      setShowConfetti(response.data.sgpa >= 9.0); // Show confetti for GPA > 9.5
       setError('');
     } catch (err) {
       setSgpa(null);
+      setShowConfetti(false);
       setError(err.response?.data?.error || 'An error occurred while calculating GPA.');
     }
   };
@@ -97,6 +101,7 @@ const App = () => {
         {sgpa !== null ? (
           <>
             <div className="gpa-result-section">
+              {showConfetti && <Confetti />} {/* Render confetti after GPA appears */}
               <img
                 src={getGpaImage(sgpa)}
                 alt="GPA Illustration"
@@ -111,8 +116,11 @@ const App = () => {
             <div className='center-button'>
               <button
                 className="btn calculate-btn recalculate-btn"
-                onClick={() => setSgpa(null)}
-                style={{marginTop: '20px'}}
+                onClick={() => {
+                  setSgpa(null);
+                  setShowConfetti(false); // Reset confetti
+                }}
+                style={{ marginTop: '20px' }}
               >
                 Calculate Again
               </button>
