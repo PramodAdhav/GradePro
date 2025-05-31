@@ -4,13 +4,13 @@ html, #root {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #EBE8E2; /* Full gray */
+  background-color: black; /* Full gray */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
   height: 100%;
   margin: 0;
-  background: #00416A;  /* fallback */
+  background: black;  /* fallback */
   background: -webkit-linear-gradient(to right, #EBE8E2, #00416A);
   background: linear-gradient(to right, #EBE8E2, #00416A);
   color: #222; /* default text color, adjust if needed */
@@ -47,13 +47,13 @@ canvas {
   font-size: 2rem;
   font-weight: bold;
   margin: -32px 0 20px 0;
-  color: #000;
+  color: white;
 }
 
 /* Navbar: no rounded corners, softer blue */
 .navbar {
   border-radius: 0 !important; /* remove rounding */
-  background-color: #36476f;
+  background-color: black;
   padding: 12px 24px;
   display: flex;
   justify-content: space-between;

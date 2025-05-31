@@ -4,7 +4,7 @@
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+  background-color: black;
   color: #333;
 }
 
@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #1e1e1e;
-  color: #fff;
+  color: black;
   padding: 1rem 2rem;
   border-bottom: 2px solid black;
   font-size: 1rem;
@@ -44,8 +44,8 @@
 }
 
 .nav-button:hover {
-  border-color: lightskyblue;
-  background-color: lightskyblue;
+  border-color: black;
+  background-color: black;
 }
 
 .nav-button.active {
@@ -58,13 +58,13 @@
 .main-content {
   flex: 1;
   padding: 2rem;
-  background-color: lightblue;
-  box-shadow: inset 0 1px 0 #e0e0e0;
+  background-color: black;
+  box-shadow: inset 0 1px 0 black;
 }
 
 /* Footer */
 .footer {
-  background-color: #1e1e1e;
+  background-color: black;
   color: #ccc;
   text-align: center;
   padding: 1rem 2rem;
