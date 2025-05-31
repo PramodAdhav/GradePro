@@ -2,18 +2,18 @@
   max-width: 500px;
   margin: 30px auto;
   padding: 24px;
-  background: rgba(54, 147, 230, 0.401);
+  background: #121212;
   
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.908);
+  
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
 .cgpa-title {
   margin-bottom: 20px;
-  font-size: 40px;
-  color: #000000;
+  font-size: 1.8rem;
+  color: white;
 }
 
 .semester-list-vertical {
@@ -35,7 +35,7 @@
   height: 36px;
   padding: 4px 8px;
   font-size: 15px;
-  border: 1px solid rgb(139, 201, 239);
+  border: 1px solid grey;
   border-radius: 8px;
   text-align: center;
 }

@@ -4,15 +4,15 @@ html, #root {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #d9d9d9; /* Full gray */
+  background-color: #EBE8E2; /* Full gray */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
   height: 100%;
   margin: 0;
   background: #00416A;  /* fallback */
-  background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);
-  background: linear-gradient(to right, #E4E5E6, #00416A);
+  background: -webkit-linear-gradient(to right, #EBE8E2, #00416A);
+  background: linear-gradient(to right, #EBE8E2, #00416A);
   color: #222; /* default text color, adjust if needed */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -53,7 +53,7 @@ canvas {
 /* Navbar: no rounded corners, softer blue */
 .navbar {
   border-radius: 0 !important; /* remove rounding */
-  background-color: #3a5a80;
+  background-color: #36476f;
   padding: 12px 24px;
   display: flex;
   justify-content: space-between;
@@ -92,7 +92,7 @@ canvas {
 }
 
 .navbar .nav-option:hover {
-  background-color: #557aab;
+  background-color: lightblue;
 }
 
 .navbar .nav-option.active {
